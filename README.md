@@ -1,3 +1,3 @@
 # SC1015_proj
 
-# we are tej, augustine and ryan :)
+# we are teg, augustine and ryan :)
