@@ -3,25 +3,20 @@
 
 Welcome to our project's repository for SC1015: Introduction to Data Science and Artificial Intelligence !
 
-## Contributors ##
-- Ryan Ng (@iamschlomo) : Support Vector Machine, K-Nearest-Neighbours
-- Teg Tiwana (@tej172) : Multilayer Perceptron
-- Augustine Lee (@auglxw) : Data Cleaning, Exploratory Data Analysis, Feature Engineering, Decision Tree Classifier, XGBoost Classifier
+## Problem Formulation ##  
+In this project, we are interested in finding out how different factors affect one's income. We felt that this will serve useful for people who wish to enter a new job and would like to know, with their characteristics, what is the rough income they can expect to receive. We aim to create a classification model that will take in the features of an individual and predict an income class. Hence, the questions we aim to answer through our project are:
+- What are the most important factors in determining one's income?
+- Can we create a ML model to classify one's potential income to an income range based on his/her information?
 
-## Repository Directory ##
+**Performance Metric:** F1 (Macro-averaging) score. F1 score takes into account both precision and recall, and macro averaging treats each income class as equal.
+
+## Repository Organisation ##
 - Data folder: Contains the raw dataset, reduced dataset and train and test datasets. It also contains the data dictionary file obtained from the US Census Department.
 - Data Cleaning.ipynb: Notebook for Data Cleaning and Preprocessing
 - Feature Engineering.ipynb: Notebook for Feature Transformation and Dimension Reduction
 - EDA.ipynb: Notebook for Exploratory Data Analysis
 - ML_Decision Tree Classifier.ipynb: Notebook for Decision Tree Classifier model
 - ML_Gradient Boosting Classier.ipynb: Notebook for Gradient Boosting Classifier model
-
-## Problem Formulation ##  
-In this project, we are interested in finding out how different factors affect one's income. We felt that this will serve useful for people who wish to enter a new job and would like to know, with their characteristics, what is the rough income they can expect to receive. We aim to create a classification model that will take in the features of an individual and predict an income class. Hence, the questions we aim to answer through our project are:
-- What are the most important factors in determining one's income?
-- Can we create a ML model to classify one's potential income to an income range based on his/her information?
-#### Metrics for success: ####
-F1 (Macro-averaging) score. F1 score takes into account both precision and recall, and macro averaging treats each income class as equal.
 
 ## Data Source ##  
 To address our problem, we have used the the Annual Social and Economic Supplements from the United States' Census Bureau Current Population Survey 2021. This dataset provides us with data of American and a wide range of their information, from innate characteristics (race, gender etc) to education attaintment to familial information, as well as their corresponding income.
@@ -97,3 +92,22 @@ In this notebook, we explored the use of a Gradient Boosting Classifier.
 - Feature Engineering: MinMax Scaler, Mutual Information, Chi-Squared Test
 - Cross-Validation: GridSearchCV
 - ML models: XGBoost Classifier, Multilayer Perceptron, Support Vector Machine, K-Nearest-Neighbours
+
+## Contributors ##
+- Ryan Ng (@iamschlomo) : Support Vector Machine, K-Nearest-Neighbours
+- Teg Tiwana (@tej172) : Multilayer Perceptron
+- Augustine Lee (@auglxw) : Data Cleaning, Exploratory Data Analysis, Feature Engineering, Decision Tree Classifier, XGBoost Classifier
+
+#
+## References ##
+- https://machinelearningmastery.com/feature-selection-with-categorical-data/
+- https://towardsdatascience.com/chi-square-test-for-feature-selection-in-machine-learning-206b1f0b8223
+- https://machinelearningmastery.com/information-gain-and-mutual-information/
+- https://towardsdatascience.com/feature-selection-techniques-in-machine-learning-with-python-f24e7da3f36e
+- https://towardsdatascience.com/everything-you-need-to-know-about-min-max-normalization-in-python-b79592732b79
+- https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html
+- https://stackoverflow.com/questions/62178888/can-someone-explain-to-me-how-minmaxscaler-works
+- https://www.investopedia.com/terms/p/p-value.asp#:~:text=A%20p%2Dvalue%20measures%20the,is%20generally%20considered%20statistically%20significant.
+- https://machinelearningmastery.com/develop-first-xgboost-model-python-scikit-learn/
+- https://towardsdatascience.com/beginners-guide-to-xgboost-for-classification-problems-50f75aac5390
+- https://xgboost.readthedocs.io/en/stable/
