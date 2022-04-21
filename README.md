@@ -17,6 +17,7 @@ In this project, we are interested in finding out how different factors affect o
 - EDA.ipynb: Notebook for Exploratory Data Analysis
 - ML_Decision Tree Classifier.ipynb: Notebook for Decision Tree Classifier model
 - ML_Gradient Boosting Classier.ipynb: Notebook for Gradient Boosting Classifier model
+
 **Viewing Order:** You may follow through this project according to our pipeline:
 1. Data Cleaning.ipynb
 2. EDA.ipynb
