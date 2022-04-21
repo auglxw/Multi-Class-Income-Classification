@@ -11,12 +11,17 @@ In this project, we are interested in finding out how different factors affect o
 **Performance Metric:** F1 (Macro-averaging) score. F1 score takes into account both precision and recall, and macro averaging treats each income class as equal.
 
 ## Repository Organisation ##
-- Data folder: Contains the raw dataset, reduced dataset and train and test datasets. It also contains the data dictionary file obtained from the US Census Department.
+- Data folder: Contains the raw dataset, reduced dataset and train and test datasets. It also contains the data dictionary and occupation code files obtained from the US Census Department.
 - Data Cleaning.ipynb: Notebook for Data Cleaning and Preprocessing
 - Feature Engineering.ipynb: Notebook for Feature Transformation and Dimension Reduction
 - EDA.ipynb: Notebook for Exploratory Data Analysis
 - ML_Decision Tree Classifier.ipynb: Notebook for Decision Tree Classifier model
 - ML_Gradient Boosting Classier.ipynb: Notebook for Gradient Boosting Classifier model
+**Viewing Order:** You may follow through this project according to our pipeline:
+1. Data Cleaning.ipynb
+2. EDA.ipynb
+3. Feature Engineering.ipynb
+4. Machine Learning Notebooks
 
 ## Data Source ##  
 To address our problem, we have used the the Annual Social and Economic Supplements from the United States' Census Bureau Current Population Survey 2021. This dataset provides us with data of American and a wide range of their information, from innate characteristics (race, gender etc) to education attaintment to familial information, as well as their corresponding income.
