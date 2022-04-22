@@ -18,7 +18,7 @@ In this project, we are interested in finding out how different factors affect o
 - ML_Decision Tree Classifier.ipynb: Notebook for Decision Tree Classifier model
 - ML_Gradient Boosting Classier.ipynb: Notebook for Gradient Boosting Classifier model
 
-**Viewing Order:** You may follow through this project according to our pipeline:
+**Flow of Project:**
 1. Data Cleaning.ipynb
 2. EDA.ipynb
 3. Feature Engineering.ipynb
