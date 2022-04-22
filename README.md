@@ -65,6 +65,18 @@ The summary of the our insights from Single-Variate, Bi-Variate and Multi-Variat
 In this notebook, we did feature scaling (numerical) using MinMax Scaler and dimension reduction through feature selection (categorical) using Mutual Information and Chi-Squared Test. The categorical features with the significant dependence with Salary are: Occupation, Education, Less than 35hrs for at least 1 week, Occupation Group, Longest Industry, More than 35hrs weekly, Industry, Detailed Household Status, Marital.
 
 #
+## ML - Support Vector Machine ##
+
+#
+## ML - Logistic Regression ##
+
+#
+## ML - K-Nearest-Neighbours ##
+
+#
+## ML - Multilayer Perceptron ##
+
+#
 ## ML - Decision Tree Classifier ##
 In this notebook, we explored the use of a Decision Tree Classifier.
 - Our base model of max depth 3 yielded a f1 score of 0.47628.
@@ -72,15 +84,8 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 - We conducted cross-validation using GridSearchCV and found the optimal max depth is 11 and this model yielded a f1 score of 0.53561.
 - Industry, Disability, Age and Occupation Group are the top factors considered by our decision tree classifier.
 
-
 #
-## ML - Support Vector Machine ##
-
-#
-## ML - K-Nearest-Neighbours ##
-
-#
-## ML - Multilayer Perceptron ##
+## ML - CatBoost Classifier ##
 
 #
 ## ML - XGBoost Classifier ##
@@ -91,6 +96,7 @@ In this notebook, we explored the use of a Gradient Boosting Classifier.
 
 #
 ## Conclusions and Recommendations ##
+- Our tuning of ML models have increased from an initial f1 score of 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too. We believe that it is because Salary can be affected by non-quantifiable data like one's connections, EQ, negotiation skills, individual interview performance, company's budget availability and payment methods (stock options, housing, education - not just Salary).
 
 #
 ## New tools we have learnt ##
@@ -99,9 +105,10 @@ In this notebook, we explored the use of a Gradient Boosting Classifier.
 - Cross-Validation: GridSearchCV
 - ML models: XGBoost Classifier, Multilayer Perceptron, Support Vector Machine, K-Nearest-Neighbours
 
+#
 ## Contributors ##
-- Ryan Ng (@iamschlomo) : Support Vector Machine, K-Nearest-Neighbours
-- Teg Tiwana (@tej172) : Multilayer Perceptron
+- Ryan Ng (@iamschlomo) : Support Vector Machine, K-Nearest-Neighbours, Logistic Regression
+- Teg Tiwana (@tej172) : Multilayer Perceptron, CatBoost Classifer
 - Augustine Lee (@auglxw) : Data Cleaning, Exploratory Data Analysis, Feature Engineering, Decision Tree Classifier, XGBoost Classifier
 
 #
@@ -117,3 +124,4 @@ In this notebook, we explored the use of a Gradient Boosting Classifier.
 - https://machinelearningmastery.com/develop-first-xgboost-model-python-scikit-learn/
 - https://towardsdatascience.com/beginners-guide-to-xgboost-for-classification-problems-50f75aac5390
 - https://xgboost.readthedocs.io/en/stable/
+- https://towardsdatascience.com/deep-neural-multilayer-perceptron-mlp-with-scikit-learn-2698e77155e
