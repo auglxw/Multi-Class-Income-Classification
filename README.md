@@ -62,7 +62,7 @@ The summary of the our insights from Single-Variate, Bi-Variate and Multi-Variat
 
 #
 ## Feature Engineering ##
-In this notebook, we did feature scaling (numerical) using MinMax Scaler and dimension reduction through feature selection (categorical) using Mutual Information and Chi-Squared Test. The categorical features with the significant dependence with Salary are: Occupation, Education, Less than 35hrs for at least 1 week, Occupation Group, Longest Industry, More than 35hrs weekly, Industry, Detailed Household Status, Marital.
+In this notebook, we did feature scaling (numerical) using MinMax Scaler and dimension reduction through feature selection (categorical) using Mutual Information and Chi-Squared Test. The categorical features with the most significant dependence with Salary are: Occupation, Education, Less than 35hrs for at least 1 week, Occupation Group, Longest Industry, More than 35hrs weekly, Industry, Detailed Household Status, Marital.
 
 #
 ## ML - Support Vector Machine ##
