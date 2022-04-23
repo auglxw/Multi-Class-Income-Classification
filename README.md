@@ -97,16 +97,16 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 In this notebook, we trained Gradient Boosting Classifier models.
 - Our base model of max depth 3, n_estimators 300 and subsample 0.7 yield a f1 score of 0.57372.
 - Through hyperparameters (max depth, n_estimators and subsample) tuning, we estimated the optimal max depth to be 7-12.
-- After cross-validation, we found the optimal hyperparameters to be max depth=3, n_estimators=150 and subsample=0.8. This model yield a f1 score of 0.57250.
-- After using our feature engineered data, the model performance improved and the f1 score rose to 0.57452.
+- After cross-validation, we found the optimal hyperparameters to be max depth=3, n_estimators=150 and subsample=0.8. This model yield a f1 score of 0.57462.
+- After using our feature engineered data, the model performance improved and the f1 score rose to 0.57609.
 
 #
 ## Conclusions and Recommendations ##
 - The most important factors, identified by our best performing model (XGBoost) affecting one's salary are:
-  1. Detailed Household Status
+  1. Marital Status
   2. Age
   3. Whether you work more than 35 hours a week
-  4. Possession of Professional Certificate
+  4. Possession of government-issued Professional Certificate
   5. Gender
 - Our tuning and selection of ML models have increased the f1 score from an initial 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too. We believe that it is because Salary can be affected by non-quantifiable data like one's connections, EQ, negotiation skills, individual interview performance, company's budget availability and payment methods (stock options, housing, education - not just Salary).
 
