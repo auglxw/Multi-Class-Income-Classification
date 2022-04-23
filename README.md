@@ -1,5 +1,5 @@
 # SC1015 Project - Income Determinants #
-![Screenshot](DescriptionPic.png)
+![Screenshot](ScreenDisplayPic.png)
 
 Welcome to our project's repository for SC1015: Introduction to Data Science and Artificial Intelligence !
 
