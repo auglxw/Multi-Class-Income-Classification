@@ -65,16 +65,25 @@ The combined summary of the our insights from Single-Variate, Bi-Variate and Mul
 In this notebook, we did feature scaling (numerical) using MinMax Scaler and dimension reduction through feature selection (categorical) using Mutual Information (MI) and Chi-Squared Test for Independence (Chi-2). MI and Chi-2 measures the dependence between categorical features and salary. The categorical features with the most significant dependence with Salary are: Occupation, Education, Less than 35hrs for at least 1 week, Occupation Group, Longest Industry, More than 35hrs weekly, Industry, Detailed Household Status, Marital. However, the P Scores of all features are below 0.05, suggesting that all features have significant dependence with our response variable. Hence, reducing the dimension may not help with model's performance.
 
 #
-## ML - Support Vector Machine ##
-//Ryan
+## ML - Support Vector Machines ##
+In this notebook, we explored the use of Support Vector Machines
+- Initial tests ran across the various kernels, yielding the following scores: 0.17488 (rbf kernel), 0.259292 (polynomial kernel), 0.280103 (sigmoid kernel)
+- Was unable to arrive at any result when testing on linear kernel (runtime was in excess of 16 hours for the first iteration under default parameters)
+- Attempt at hyperparameter tuning was unsuccessful due to extremely poor time efficiency of the model across the kernels, with the rbf kernel notably taking ~50 minutes per iteration
+- Observed that feature engineering did help the performance of the rbf kernel somewhat significantly, but was otherwise ineffective against the other kernels
 
 #
 ## ML - Logistic Regression ##
-//Ryan
+In this notebook, we explored the use of Logistic Regression
+- Initial tests ran across the various solvers, yielding the following scores: 0.511295 (lbfgs solver), 0.498697 (sag solver), 0.490747 (saga solver), 0.502402 (liblinear solver)
+- Through hyperparameter tuning (solver, penalty, C) with RandomizedSearchCV and a subsequent for loop, we found the optimal solver to be liblinear, penalty to be l1 and C to be 3, and this model yielded a F1-score of 0.512655
+- Observed that feature engineering did not help in improving performance of the model
 
 #
-## ML - K-Nearest-Neighbours ##
-//Ryan
+## ML - K-Nearest-Neighbors ##
+In this notebook, we explored the use of K-nearest Neighbors
+- Our base model with default parameters yielded a F1-score of 0.497063
+- Through hyperparameter (n_neighbors) tuning, we found the optimal n_neighbor value to be 48, and this model yielded a F1-score of 0.512647
 
 #
 ## ML - Multilayer Perceptron ##
@@ -119,7 +128,7 @@ In this notebook, we trained Gradient Boosting Classifier models.
 
 #
 ## Contributors ##
-- Ryan Ng (@iamschlomo) : Support Vector Machine, K-Nearest-Neighbours, Logistic Regression
+- Ryan Ng (@iamshlomo) : Support Vector Machine, K-Nearest-Neighbours, Logistic Regression
 - Teg Tiwana (@tej172) : Multilayer Perceptron, CatBoost Classifer
 - Augustine Lee (@auglxw) : Data Cleaning, Exploratory Data Analysis, Feature Engineering, Decision Tree Classifier, XGBoost Classifier
 
@@ -137,3 +146,13 @@ In this notebook, we trained Gradient Boosting Classifier models.
 - https://towardsdatascience.com/beginners-guide-to-xgboost-for-classification-problems-50f75aac5390
 - https://xgboost.readthedocs.io/en/stable/
 - https://towardsdatascience.com/deep-neural-multilayer-perceptron-mlp-with-scikit-learn-2698e77155e
+- https://www.youtube.com/watch?v=_YPScrckx28
+- https://www.youtube.com/watch?v=GtmfRRKhKiM&t=298s
+- https://www.baeldung.com/cs/svm-multiclass-classification
+- https://www.analyticsvidhya.com/blog/2021/05/multiclass-classification-using-svm/
+- https://scikit-learn.org/stable/modules/multiclass.html
+- https://machinelearningmastery.com/multinomial-logistic-regression-with-python/
+- http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+- https://www.youtube.com/watch?v=pooXM9mM7FU&t=266s
+- https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+- http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
