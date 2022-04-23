@@ -97,7 +97,8 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 In this notebook, we trained Gradient Boosting Classifier models.
 - Our base model of max depth 3, n_estimators 300 and subsample 0.7 yield a f1 score of 0.57372.
 - Through hyperparameters (max depth, n_estimators and subsample) tuning, we estimated the optimal max depth to be 7-12.
-- After cross-validation, we found the optimal hyperparameters to be max depth=3, n_estimators=150 and subsample=0.8. This model yield a f1 score of 0.52658.
+- After cross-validation, we found the optimal hyperparameters to be max depth=3, n_estimators=150 and subsample=0.8. This model yield a f1 score of 0.57250.
+- After using our feature engineered data, the model performance improved and the f1 score rose to 0.57452.
 
 #
 ## Conclusions and Recommendations ##
