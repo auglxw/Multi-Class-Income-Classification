@@ -1,7 +1,7 @@
 # SC1015 Project - Income Determinants #
 ![Screenshot](DescriptionPic.png)
 
-Welcome to our project's repository for SC1015: Introduction to Data Science and Artificial Intelligence ! We are SC20 Group 6 (Ryan, Teg and Augustine).
+Welcome to our project's repository for SC1015: Introduction to Data Science and Artificial Intelligence !
 
 ## Problem Formulation ##  
 In this project, we are interested in finding out how different factors affect one's income. We felt that this will serve useful for people who wish to enter a new job and would like to know, with their characteristics, what is the rough income they can expect to receive. We aim to create a classification model that will take in the features of an individual and predict an income class. Hence, the questions we aim to answer through our project are:
