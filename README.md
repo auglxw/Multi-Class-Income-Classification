@@ -1,5 +1,5 @@
 # SC1015 Project - Income Determinants #
-![Screenshot](incomepic.png)
+![Screenshot](DescriptionPic.png)
 
 Welcome to our project's repository for SC1015: Introduction to Data Science and Artificial Intelligence ! We are SC20 Group 6 (Ryan, Teg and Augustine).
 
