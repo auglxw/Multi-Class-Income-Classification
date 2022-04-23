@@ -1,7 +1,7 @@
 # SC1015 Project - Income Determinants #
 ![Screenshot](incomepic.png)
 
-Welcome to our project's repository for SC1015: Introduction to Data Science and Artificial Intelligence !
+Welcome to our project's repository for SC1015: Introduction to Data Science and Artificial Intelligence ! We are SC20 Group 6 (Ryan, Teg and Augustine).
 
 ## Problem Formulation ##  
 In this project, we are interested in finding out how different factors affect one's income. We felt that this will serve useful for people who wish to enter a new job and would like to know, with their characteristics, what is the rough income they can expect to receive. We aim to create a classification model that will take in the features of an individual and predict an income class. Hence, the questions we aim to answer through our project are:
@@ -58,23 +58,27 @@ For Exploratory Data Analysis, we did the following steps:
 3. Understanding relationship of each feature with Salary through Bi-Variate Analysis
 4. Exploring possible trends through Multi-Variate Analysis
 
-The summary of the our insights from Single-Variate, Bi-Variate and Multi-Variate Analysis can be found at the bottom of the notebook.
+The combined summary of the our insights from Single-Variate, Bi-Variate and Multi-Variate Analysis can be found at the endof the notebook.
 
 #
 ## Feature Engineering ##
-In this notebook, we did feature scaling (numerical) using MinMax Scaler and dimension reduction through feature selection (categorical) using Mutual Information and Chi-Squared Test. The categorical features with the most significant dependence with Salary are: Occupation, Education, Less than 35hrs for at least 1 week, Occupation Group, Longest Industry, More than 35hrs weekly, Industry, Detailed Household Status, Marital.
+In this notebook, we did feature scaling (numerical) using MinMax Scaler and dimension reduction through feature selection (categorical) using Mutual Information (MI) and Chi-Squared Test for Independence (Chi-2). MI and Chi-2 measures the dependence between categorical features and salary. The categorical features with the most significant dependence with Salary are: Occupation, Education, Less than 35hrs for at least 1 week, Occupation Group, Longest Industry, More than 35hrs weekly, Industry, Detailed Household Status, Marital. However, the P Scores of all features are below 0.05, suggesting that all features have significant dependence with our response variable. Hence, reducing the dimension may not help with model's performance.
 
 #
 ## ML - Support Vector Machine ##
+//Ryan
 
 #
 ## ML - Logistic Regression ##
+//Ryan
 
 #
 ## ML - K-Nearest-Neighbours ##
+//Ryan
 
 #
 ## ML - Multilayer Perceptron ##
+//Teg
 
 #
 ## ML - Decision Tree Classifier ##
@@ -86,24 +90,31 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 
 #
 ## ML - CatBoost Classifier ##
+//Teg
 
 #
 ## ML - XGBoost Classifier ##
-In this notebook, we explored the use of a Gradient Boosting Classifier.
+In this notebook, we trained Gradient Boosting Classifier models.
 - Our base model of max depth 3, n_estimators 300 and subsample 0.7 yield a f1 score of 0.57372.
 - Through hyperparameters (max depth, n_estimators and subsample) tuning, we estimated the optimal max depth to be 7-12.
 - After cross-validation, we found the optimal hyperparameters to be max depth=3, n_estimators=150 and subsample=0.8. This model yield a f1 score of 0.52658.
 
 #
 ## Conclusions and Recommendations ##
-- Our tuning of ML models have increased from an initial f1 score of 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too. We believe that it is because Salary can be affected by non-quantifiable data like one's connections, EQ, negotiation skills, individual interview performance, company's budget availability and payment methods (stock options, housing, education - not just Salary).
+- The most important factors, identified by our best performing model (XGBoost) affecting one's salary are:
+  1. Detailed Household Status
+  2. Age
+  3. Whether you work more than 35 hours a week
+  4. Possession of Professional Certificate
+  5. Gender
+- Our tuning and selection of ML models have increased the f1 score from an initial 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too. We believe that it is because Salary can be affected by non-quantifiable data like one's connections, EQ, negotiation skills, individual interview performance, company's budget availability and payment methods (stock options, housing, education - not just Salary).
 
 #
 ## New tools we have learnt ##
 - Data Visualisation: GraphViz
 - Feature Engineering: MinMax Scaler, Mutual Information, Chi-Squared Test
 - Cross-Validation: GridSearchCV
-- ML models: XGBoost Classifier, Multilayer Perceptron, Support Vector Machine, K-Nearest-Neighbours
+- ML models: XGBoost Classifier, Multilayer Perceptron, Support Vector Machine, K-Nearest-Neighbours, Logistic Regression, Adaptive Boosting
 
 #
 ## Contributors ##
