@@ -12,7 +12,7 @@ In this project, we are interested in finding out how different factors affect o
 
 ## Repository Organisation ##
 - Data folder: Contains the raw dataset, reduced dataset and train and test datasets. It also contains the data dictionary and occupation code files obtained from the US Census Department.
-- Supplementary folder: Contains Data Dictionary and Occupation Codes
+- Supplementary Information folder: Contains Data Dictionary and Occupation Codes
 - Data Cleaning.ipynb: Notebook for Data Cleaning and Preprocessing
 - Feature Engineering.ipynb: Notebook for Feature Transformation and Dimension Reduction
 - EDA.ipynb: Notebook for Exploratory Data Analysis
