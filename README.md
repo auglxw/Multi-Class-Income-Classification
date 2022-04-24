@@ -12,11 +12,15 @@ In this project, we are interested in finding out how different factors affect o
 
 ## Repository Organisation ##
 - Data folder: Contains the raw dataset, reduced dataset and train and test datasets. It also contains the data dictionary and occupation code files obtained from the US Census Department.
+- Supplementary folder: Contains Data Dictionary and Occupation Codes
 - Data Cleaning.ipynb: Notebook for Data Cleaning and Preprocessing
 - Feature Engineering.ipynb: Notebook for Feature Transformation and Dimension Reduction
 - EDA.ipynb: Notebook for Exploratory Data Analysis
 - ML_Decision Tree Classifier.ipynb: Notebook for Decision Tree Classifier model
-- ML_Gradient Boosting Classier.ipynb: Notebook for Gradient Boosting Classifier model
+- ML_Gradient Boosting Classier.ipynb: Notebook for Gradient Boosting Classifier (XGBoost) model
+- ML_Support Vector Machines.ipynb: Notebook for SVM model
+- ML_Logistic Regression.ipynb: Notebook for Logistic Regression model
+- ML_K-Nearest-Neighbours.ipynb: Notebook for KNN model
 
 **Flow of Project:**
 1. Data Cleaning.ipynb
@@ -58,7 +62,7 @@ For Exploratory Data Analysis, we did the following steps:
 3. Understanding relationship of each feature with Salary through Bi-Variate Analysis
 4. Exploring possible trends through Multi-Variate Analysis
 
-The combined summary of the our insights from Single-Variate, Bi-Variate and Multi-Variate Analysis can be found at the endof the notebook.
+The combined summary of the our insights from Single-Variate, Bi-Variate and Multi-Variate Analysis can be found at the end of the notebook.
 
 #
 ## Feature Engineering ##
