@@ -198,3 +198,4 @@ In this notebook, we trained XGBoost Classifier models.
 - https://towardsdatascience.com/gradient-boosted-decision-trees-explained-with-a-real-life-example-and-some-python-code-77cee4ccf5e
 - https://stackabuse.com/gradient-boosting-classifiers-in-python-with-scikit-learn/
 - https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/
+- https://machinelearningmastery.com/calculate-feature-importance-with-python/
