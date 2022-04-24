@@ -132,7 +132,7 @@ In this notebook, we trained XGBoost Classifier models.
 - Data Visualisation: GraphViz
 - Feature Engineering: MinMax Scaler, Mutual Information, Chi-Squared Test
 - Cross-Validation: GridSearchCV
-- ML models: XGBoost Classifier, Multilayer Perceptron, Support Vector Machine, K-Nearest-Neighbours, Logistic Regression, Adaptive Boosting
+- ML models: XGBoost Classifier, Support Vector Machine, K-Nearest-Neighbours, Logistic Regression, Adaptive Boosting, Gradient Boosting Classifier (SKLearn) and CatBoost.
 
 #
 ## Contributors ##
