@@ -126,7 +126,7 @@ In this notebook, we trained XGBoost Classifier models.
   4. Possession of government-issued Professional Certificate
   5. Gender
 
-![Screenshot](ScreenConfusionMatrix.png)
+![Screenshot](screenConfusionMatrix.png)
 - Our tuning and selection of ML models have increased the f1 score from an initial 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too. We believe that it is because Salary can be affected by non-quantifiable data like one's connections, EQ, negotiation skills, individual interview performance, company's budget availability and payment methods (stock options, housing, education - not just Salary).
 
 #
