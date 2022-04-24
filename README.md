@@ -157,7 +157,7 @@ In this notebook, we trained XGBoost Classifier models.
 #
 ## Contributors ##
 - Ryan Ng (@iamshlomo) : Support Vector Machine, K-Nearest-Neighbours, Logistic Regression, Presentation
-- Teg Tiwana (@tej172) : CatBoost Classifer, Gradient Boosting Classifier, Adaptive Boosting, Presentation
+- Teg Singh Tiwana (@tej172) : CatBoost Classifer, Gradient Boosting Classifier, Adaptive Boosting, Presentation
 - Augustine Lee (@auglxw) : Data Cleaning, Exploratory Data Analysis, Feature Engineering, Decision Tree Classifier, XGBoost Classifier
 
 #
