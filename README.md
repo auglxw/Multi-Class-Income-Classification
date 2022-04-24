@@ -90,10 +90,6 @@ In this notebook, we explored the use of K-nearest Neighbors
 - Through hyperparameter (n_neighbors) tuning, we found the optimal n_neighbor value to be 48, and this model yielded a F1-score of 0.512647
 
 #
-## ML - Multilayer Perceptron ##
-//Teg
-
-#
 ## ML - Decision Tree Classifier ##
 In this notebook, we explored the use of a Decision Tree Classifier.
 - Our base model of max depth 3 yielded a f1 score of 0.47628.
@@ -106,8 +102,16 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 //Teg
 
 #
+## ML - AdaBoost Classifier ##
+//Teg
+
+#
+## ML - Gradient Boosting Classifier (XGBoost) ##
+//Teg
+
+#
 ## ML - XGBoost Classifier ##
-In this notebook, we trained Gradient Boosting Classifier models.
+In this notebook, we trained XGBoost Classifier models.
 - Our base model of max depth 3, n_estimators 300 and subsample 0.7 yield a f1 score of 0.57372.
 - Through hyperparameters (max depth, n_estimators and subsample) tuning, we estimated the optimal max depth to be 7-12.
 - After cross-validation, we found the optimal hyperparameters to be max depth=3, n_estimators=150 and subsample=0.8. This model yield a f1 score of 0.57462.
@@ -133,7 +137,7 @@ In this notebook, we trained Gradient Boosting Classifier models.
 #
 ## Contributors ##
 - Ryan Ng (@iamshlomo) : Support Vector Machine, K-Nearest-Neighbours, Logistic Regression
-- Teg Tiwana (@tej172) : Multilayer Perceptron, CatBoost Classifer
+- Teg Tiwana (@tej172) : CatBoost Classifer, Gradient Boosting Classifier, Adaptive Boosting
 - Augustine Lee (@auglxw) : Data Cleaning, Exploratory Data Analysis, Feature Engineering, Decision Tree Classifier, XGBoost Classifier
 
 #
