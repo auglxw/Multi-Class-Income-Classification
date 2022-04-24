@@ -106,7 +106,7 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 //Teg
 
 #
-## ML - Gradient Boosting Classifier (GBM) ##
+## ML - Gradient Boosting Classifier (SKLearn) ##
 //Teg
 
 #
@@ -125,6 +125,8 @@ In this notebook, we trained XGBoost Classifier models.
   3. Whether you work more than 35 hours a week
   4. Possession of government-issued Professional Certificate
   5. Gender
+
+![Screenshot](ScreenConfusionMatrix.png)
 - Our tuning and selection of ML models have increased the f1 score from an initial 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too. We believe that it is because Salary can be affected by non-quantifiable data like one's connections, EQ, negotiation skills, individual interview performance, company's budget availability and payment methods (stock options, housing, education - not just Salary).
 
 #
