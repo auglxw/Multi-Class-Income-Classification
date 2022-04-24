@@ -137,6 +137,7 @@ In this notebook, we trained XGBoost Classifier models.
   3. Whether you work more than 35 hours a week
   4. Possession of government-issued Professional Certificate
   5. Gender
+ 
 - From our second best performing model (CatBoost), we can also note the most important factors affecting one's salary are:
   1.  Industry they are working in
   2.  Level of education they have attained
