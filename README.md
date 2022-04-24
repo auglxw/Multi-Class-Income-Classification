@@ -143,7 +143,7 @@ In this notebook, we trained XGBoost Classifier models.
   2.  Level of education they have attained
   3.  Citizen Status
 
-![Screenshot](ScreenConfusionMatrix.png)
+![Screenshot 2022-04-24 234801](https://user-images.githubusercontent.com/82508380/164984915-b9320beb-ec23-4960-93ab-dfdbc76cbfdb.png)
 - Our tuning and selection of ML models have increased the f1 score from an initial 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too.
 - We believe that it is because Salary can be affected by non-quantifiable data like one's connections, EQ, negotiation skills, individual interview performance, company's budget availability and payment methods (stock options, housing, education - not just Salary).
 
