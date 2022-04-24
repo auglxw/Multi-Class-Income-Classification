@@ -98,16 +98,28 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 - Industry, Disability, Age and Occupation Group are the top factors considered by our decision tree classifier.
 
 #
-## ML - CatBoost Classifier ##
-//Teg
-
-#
 ## ML - AdaBoost Classifier ##
-//Teg
+In this notebook, we implemented different Adaptive Boosting Classifier Models.
+- Our base model with 300 n_estimators, the SAMME.R alogorithm and learning rate of 1.0, yielded a f1 score of 0.56464.
+- Through hyperparameter tuning using cross-validation on RandomSearchCV, we found the following optimal parameters of 'n_estimators': 1000 and 'learning_rate': 0.8676530612244899 and the model yielded a f1 score of 0.56669.
+- After we tuned our model, we found the most relevant features to our model and thus the most consequential features affecting a person’s salary: the industry they are working in (most significant), the occupation they are working in, the person’s age. Some features were a little less relevant to determine one’s salary: whether you are an army veteran(least significant) and whether you have a government-issued Professional Certificate
+- After tuning, both the training and test set accuracy do not have much of a difference in f1-scores as compared to other ML models, and thus this means that there was alomost no overfitting of data in this model.
 
 #
 ## ML - Gradient Boosting Classifier (SKLearn) ##
-//Teg
+In this notebook, we implemented different Gradient Boosting Machine Classifier Models.
+- Our base model with 300 n_estimators, the subspace of 0.7 and max_depth of 3, yielded a f1 score of 0.57255.
+- Through hyperparameter tuning using cross-validation on RandomSearchCV, we found the following optimal parameters of 'subsample': 0.65, 'n_estimators': 450, 'max_depth': 6 and 'learning_rate': 0.02583333333 and the model yielded a f1 score of 0.56669.
+- After we tuned our model, we found the most relevant features to our model and thus the most consequential features affecting a person’s salary: the occupation they are working in (most significant), whether you work less than 35 hours a week or not, their highest attained education status and lastly how long they have worked in a week. Some features were a little less relevant to determine one’s salary: Whether you work more than 35 hours a week or not (least significant), whether you have a government-issued Professional Certificate, whether you are disabled and whether you are an army veteran.
+- After tuning, both the training and test set accuracy have a significant deviation, a much larger difference in f1-scores (almost a 0.1 f1-score difference between the test and train data) than other ML models, and thus this could mean that there is overfitting of data in this model, and thus might not be the best model to use.
+
+#
+## ML - CatBoost Classifier ##
+In this notebook, we trained different CatBoost Classifier models
+- Our base model with 300 iterations, depth 3 and learning rate of 0.1, yielded a f1 score of 0.57006.
+- Through hyperparameter tuning using cross-validation on RandomSearchCV, we found the following optimal parameters of 'learning_rate': 0.1149999, 'iterations': 1000 and 'depth': 4 and the model yielded a f1 score of 0.57596.
+- After we tuned our model, we found the most relevant features to our model and thus the most consequential features affecting a person’s salary: the industry they are working in (most significant), the level of education they have attained, their citizen status and lastly the person’s age. Some features were a little less relevant to determine one’s salary: Whether you work less than 35 hours a week (least significant), whether you have a government-issued Professional Certificate and whether you are an army veteran
+- After tuning, both the training and test set accuracy are still quite comparable and this is one of the key benefits of using the CatBoost model as it is specially designed to prevent overfitting of data. Thus there was very little overfitting in the model.
 
 #
 ## ML - XGBoost Classifier ##
@@ -166,4 +178,18 @@ In this notebook, we trained XGBoost Classifier models.
 - http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
 - https://www.youtube.com/watch?v=pooXM9mM7FU&t=266s
 - https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+- https://catboost.ai/en/docs/concepts/parameter-tuning
+- https://catboost.ai/en/docs/concepts/python-reference_catboostclassifier
+- https://catboost.ai/en/docs/concepts/parameter-tuning
+- https://datascience.stackexchange.com/questions/82684/catboost-multiclassification-evaluation-metric-kappa-wkappa
+- https://catboost.ai/en/docs/concepts/python-usages-examples#multiclassification
+- https://www.projectpro.io/recipes/find-optimal-parameters-for-catboost-using-gridsearchcv-for-classification
+- https://www.projectpro.io/recipes/use-catboost-classifier-and-regressor-in-python
+- https://datascience.stackexchange.com/questions/28426/train-accuracy-vs-test-accuracy-vs-confusion-matrix
 - http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
+- https://towardsdatascience.com/machine-learning-part-18-boosting-algorithms-gradient-boosting-in-python-ef5ae6965be4
+- https://machinelearningmastery.com/gradient-boosting-machine-ensemble-in-python/
+- https://www.projectpro.io/recipes/find-optimal-parameters-for-catboost-using-gridsearchcv-for-regression
+- https://towardsdatascience.com/gradient-boosted-decision-trees-explained-with-a-real-life-example-and-some-python-code-77cee4ccf5e
+- https://stackabuse.com/gradient-boosting-classifiers-in-python-with-scikit-learn/
+- https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/
