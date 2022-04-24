@@ -106,7 +106,7 @@ In this notebook, we explored the use of a Decision Tree Classifier.
 //Teg
 
 #
-## ML - Gradient Boosting Classifier (XGBoost) ##
+## ML - Gradient Boosting Classifier (GBM) ##
 //Teg
 
 #
