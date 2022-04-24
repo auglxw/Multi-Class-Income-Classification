@@ -109,7 +109,7 @@ In this notebook, we implemented different Adaptive Boosting Classifier Models.
 ## ML - Gradient Boosting Classifier (SKLearn) ##
 In this notebook, we implemented different Gradient Boosting Machine Classifier Models.
 - Our base model with 300 n_estimators, the subspace of 0.7 and max_depth of 3, yielded a f1 score of 0.57255.
-- Through hyperparameter tuning using cross-validation on RandomSearchCV, we found the following optimal parameters of 'subsample': 0.65, 'n_estimators': 450, 'max_depth': 6 and 'learning_rate': 0.02583333333 and the model yielded a f1 score of 0.56669.
+- Through hyperparameter tuning using cross-validation on RandomSearchCV, we found the following optimal parameters of 'subsample': 0.65, 'n_estimators': 450, 'max_depth': 6 and 'learning_rate': 0.02583333333 and the model yielded a f1 score of 0.57836.
 - After we tuned our model, we found the most relevant features to our model and thus the most consequential features affecting a person’s salary: the occupation they are working in (most significant), whether you work less than 35 hours a week or not, their highest attained education status and lastly how long they have worked in a week. Some features were a little less relevant to determine one’s salary: Whether you work more than 35 hours a week or not (least significant), whether you have a government-issued Professional Certificate, whether you are disabled and whether you are an army veteran.
 - After tuning, both the training and test set accuracy have a significant deviation, a much larger difference in f1-scores (almost a 0.1 f1-score difference between the test and train data) than other ML models, and thus this could mean that there is overfitting of data in this model, and thus might not be the best model to use.
 
@@ -137,6 +137,10 @@ In this notebook, we trained XGBoost Classifier models.
   3. Whether you work more than 35 hours a week
   4. Possession of government-issued Professional Certificate
   5. Gender
+- From our second best performing model (CatBoost), we can also note the most important factors affecting one's salary are:
+  1.  Industry they are working in
+  2.  Level of education they have attained
+  3.  Citizen Status
 
 ![Screenshot](ScreenConfusionMatrix.png)
 - Our tuning and selection of ML models have increased the f1 score from an initial 0.39 to 0.57. In the confusion matrix, we see that the diagonals are well lit-up too. However, adjacent squares have quite a high incidence too.
@@ -151,8 +155,8 @@ In this notebook, we trained XGBoost Classifier models.
 
 #
 ## Contributors ##
-- Ryan Ng (@iamshlomo) : Support Vector Machine, K-Nearest-Neighbours, Logistic Regression
-- Teg Tiwana (@tej172) : CatBoost Classifer, Gradient Boosting Classifier, Adaptive Boosting
+- Ryan Ng (@iamshlomo) : Support Vector Machine, K-Nearest-Neighbours, Logistic Regression, Presentation
+- Teg Tiwana (@tej172) : CatBoost Classifer, Gradient Boosting Classifier, Adaptive Boosting, Presentation
 - Augustine Lee (@auglxw) : Data Cleaning, Exploratory Data Analysis, Feature Engineering, Decision Tree Classifier, XGBoost Classifier
 
 #
